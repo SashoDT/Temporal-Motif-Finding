@@ -1,0 +1,28 @@
+
+<!--<div id="graphInterface">Graph Interface</div>
+<div id="graphContainer">
+</div>
+
+<div class="button-container">
+  <button class="graph-button" (click)="addNode()">Add Node</button>
+</div>-->
+
+
+<div id="graphInterface">Graph Interface</div>
+<div id="graphContainer"></div>
+
+<div class="year-range">
+  <label for="lowerYear">Lower Year Bound:</label>
+  <input type="number" id="lowerYear" name="lowerYear" [(ngModel)]="lowerYear">
+
+  <label for="upperYear">Upper Year Bound:</label>
+  <input type="number" id="upperYear" name="upperYear" [(ngModel)]="upperYear">
+</div>
+
+<div class="button-container">
+  <button class="graph-button" (click)="addNode('Person')">Add Person Node</button>
+  <button class="graph-button" (click)="addNode('Movie')">Add Movie Node</button>
+  <button class="graph-button" (click)="onSubmit()">Search</button>
+</div>
+
+
